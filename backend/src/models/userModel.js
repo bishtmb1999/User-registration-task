@@ -26,7 +26,7 @@ const userSchema = new mongoose.Schema(
         gender: {
             type: String,
             required: true,
-            enum: ["Male", "Female", "LGBT"]
+            enum: ["male", "female", "lgbt"]
           },
        state:{
             type:String,
@@ -45,7 +45,6 @@ const userSchema = new mongoose.Schema(
         },
         age:{
             type:Number,
-            required: true
 
         },
 

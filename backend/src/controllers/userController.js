@@ -75,7 +75,7 @@ const createUser= async function(req,res){
           if (!validator.isValidEnum(gender)) {
              return res
              .status(400)
-             .send({ status: false, message: " gender must be 'Male' /'female' /'LGBT'",
+             .send({ status: false, message: " gender must be 'male' /'female' /lgbtq'",
              });
              }
              if (!validator.isValidValue(state)) {
@@ -107,12 +107,7 @@ const createUser= async function(req,res){
                   .status(400)
                   .send({ status: false, message: "dob is required" });
               }
-              if (!validator.isValidValue(age)) {
-                return res
-                  .status(400)
-                  .send({ status: false, message: "age is required" });
-                  
-              }
+              
       
   
     

@@ -9,7 +9,7 @@ const isValidValue = function (value) {
     return true;
   };
   const isValidEnum = function (value) {
-    let Enum = ["Male", "Female", "LGBT"];
+    let Enum = ["male", "female", "lgbt"];
     if (Enum.includes(value)) {
       return true;
     }
